@@ -1,0 +1,201 @@
+form {
+  padding: 0 16px 16px 16px;
+}
+ion-content {
+  --background: none;
+  background-image: url(../../../assets/img/event1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ion-item {
+  --background: none;
+  background-color: transparent !important;
+  padding-right: 16px !important;
+  min-height: 3.4rem !important;
+}
+
+ion-list ion-item:last-child .item-inner {
+  padding-right: 0 !important;
+}
+
+ion-label {
+  margin: 13px 0 !important;
+}
+
+.list-ios>.item-block:first-child {
+  border-top: none;
+}
+
+.list-ios>.item-block:last-child,
+.list-ios>.item-wrapper:last-child .item-block {
+  border-bottom: none;
+}
+
+.text-input,
+ion-label,
+.item-input-has-focus .label-md[stacked],
+.input-has-focus .label-md[stacked],
+.item-input-has-focus .label-md[floating],
+.input-has-focus .label-md[floating] {
+  color: #e71515;
+}
+
+.item-md.item-input.item-input-has-focus .item-inner,
+.item-md.item-input.input-has-focus .item-inner {
+  --border:none;
+  border-bottom-color: #dedede;
+}
+
+.item-md.item-input.item-input-has-focus .item-inner,
+.item-md.item-input.input-has-focus .item-inner {
+  -webkit-box-shadow: inset 0 -1px 0 0 #dedede;
+  box-shadow: inset 0 -1px 0 0 #dedede;
+}
+
+
+.label-ios[floating],
+.label-md[floating] {
+  -webkit-transform: translate3d(0, 37px, 0);
+  transform: translate3d(0, 37px, 0);
+}
+
+.item-input-has-focus .label-ios[floating],
+.input-has-focus .label-ios[floating],
+.item-input-has-value .label-ios[floating],
+.input-has-value .label-ios[floating],
+.item-input-has-focus .label-md[floating],
+.input-has-focus .label-md[floating],
+.item-input-has-value .label-md[floating],
+.input-has-value .label-md[floating] {
+  -webkit-transform: translate3d(0, 12px, 0) scale(0.8);
+  transform: translate3d(0, 12px, 0) scale(0.8);
+}
+
+button {
+  height: 3.8rem !important;
+}
+
+.logo {
+  display: block;
+  width: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 93px;
+}
+
+ion-navbar[transparent] {
+
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.main-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.dark .main-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+}
+
+.page-title {
+  margin: 30px 0;
+  text-align: center;
+  position: relative;
+  top: -60px;
+}
+
+.page-title ion-icon {
+  position: absolute;
+  right: 10px;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.page-title .logo {
+  width: 35px;
+}
+
+.page-title h1 {
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+.list-md,.list-ios {
+  background: transparent;
+}
+
+.item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+  border-bottom-color: #f53d3d;
+  -webkit-box-shadow: inset 0 -1px 0 0 #f53d3d;
+  box-shadow: inset 0 -1px 0 0 #f53d3d;
+}
+
+.list-md .item-block .item-inner ,.list-ios .item-block .item-inner{
+  --border-bottom:1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+.native-input {
+  color: #ffffff;
+}
+
+ion-list.list {
+  background: transparent;
+}
+.login-btn {
+  margin: 35px 0px;
+  padding: 0 12px;
+}
+
+input {
+  background: transparent;
+  border: none;
+}
+
+ion-icon {
+  padding-right: 10px;
+}
+
+.social-login-main-container {
+  display: flex;
+
+  .social-login-button-container {
+      text-align: center;
+      margin: auto;
+  }
+}
+
+.linkedin-social-label{
+  padding: 0 6px;
+}
+.twitter-social-label{
+  padding: 0 4px;
+}
+
+
+//View Value Customization
+ion-label {
+  margin: 13px 0px 5px !important;
+}
+.label-floating.sc-ion-label-md-h{
+  -webkit-transform: translate3d(0,27px,0);
+  transform: translate3d(0,27px,0);
+}
+.item-has-value .label-floating.sc-ion-label-md-h,
+.item-has-value .label-floating.sc-ion-label-ios-h,
+.item-has-focus .label-floating.sc-ion-label-md-h,
+.item-has-focus .label-floating.sc-ion-label-ios-h{
+  -webkit-transform: translate3d(0,0,0) scale(.8);
+  transform: translate3d(0,0,0) scale(.8);
+}
+.item-interactive.ion-invalid{
+      --highlight-background: transparent;
+}
+ion-grid.md.hydrated {
+  display: inherit;
+}

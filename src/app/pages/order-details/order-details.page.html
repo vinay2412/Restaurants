@@ -1,0 +1,79 @@
+<ion-header>
+    <ion-toolbar color="primary">
+    <ion-buttons slot="start" color="dark">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title style="text-align: center">Order-Details</ion-title>
+  </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+        <img class="" src="../../../assets/img/images.jpeg">
+        <div class="card-title">OrderDetails</div>
+        <div class="details">
+            <h4>Order Details</h4>
+            <ion-row>
+                <ion-col col-5>
+                    <span class="order-desc">Order Id:</span>
+                </ion-col>
+                <ion-col>
+                    <span class="data">orderkey</span>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-5>
+                    <span class="order-desc">Quantity:</span>
+                </ion-col>
+                <ion-col>
+                    <span class="data">orderDetails</span>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-5>
+                    <span class="order-desc">Amount Paid: </span>
+                </ion-col>
+                <ion-col>
+                    <ion-icon class="check" name="checkmark"></ion-icon>
+                    &nbsp;
+                    <span class="amount"></span>
+                </ion-col>
+            </ion-row>
+            <div >
+                <ion-row>
+                    <ion-col col-5>Your Rating</ion-col>
+                    <ion-col>
+                        <span class="product-rating">
+                            <!-- <ion-rating name="rating" id="rating" readOnly="true"
+                                max="5" emptyStarIconName="star-outline" halfStarIconName="star-half" starIconName="star"
+                                nullable="false">
+    
+                            </ion-rating> -->
+                        </span>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col col-5>Your Review </ion-col>
+                    <ion-col>
+                        <span>orderDetails.comment</span>
+                    </ion-col>
+                </ion-row>
+            </div>
+            <!-- <span class="pay" *ngIf="!orderDetails.cod">{{"through debit cart</span><span
+            class="pay" *ngIf="orderDetails.cod">{{"Cash on Delivery</span> -->
+            <!-- </p> -->
+        </div>
+        <!--rate button-->
+    
+        <button ion-button full class="rating-Button"
+            (click)="rate()">
+            Rate Product
+        </button>
+    
+        <!--buy button-->
+    
+        <button ion-button icon-left full class="btn-add-to-cart" (click)="buyAgain()">
+            BUY AGAIN
+        </button>
+    
+  
+</ion-content>

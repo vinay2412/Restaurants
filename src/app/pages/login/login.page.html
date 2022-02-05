@@ -1,0 +1,76 @@
+<ion-header>
+        <ion-toolbar color="primary">
+        <ion-buttons slot="start" color="dark">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+        <ion-title style="text-align: center">Login</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="dark">
+	<div class="main-container">
+	  <div class="page-title">
+          <img src="/assets/img/logo-icon.png" class="logo" alt="Logo" />
+		<h1>Login</h1>
+	  </div>
+  
+	  <form [formGroup]="login" (ngSubmit)="doLogin()">
+		<ion-list>
+		  <ion-item>
+			<ion-label position="floating" color="medium" > Email </ion-label>
+			<ion-input type="email" [(ngModel)]="email" formControlName="email" color="light">
+			</ion-input>
+		  </ion-item>
+  
+		  <ion-item>
+			<ion-label position="floating" color="medium" > Password </ion-label>
+			<ion-input type="password" [(ngModel)]="password" formControlName="password" color="light">
+			</ion-input>
+		  </ion-item>
+  
+		  <div class="login-btn">
+			<ion-button
+			  size="medium"
+			  type="submit"
+			  [disabled]="!login.valid"
+			  expand="block">
+			  			  Login
+			</ion-button>
+		  </div>
+		</ion-list>
+	  </form>
+  
+	  <ion-grid>
+		<ion-row>
+		  <ion-col text-center>
+			<ion-button size="medium" (click)="facebookLogin()" color="facebook">
+			  <ion-icon name="logo-facebook"></ion-icon>
+			  <label class="facebook-social-label"> Facebook </label>
+			</ion-button>
+		  </ion-col>
+  
+		  <ion-col text-center>
+			<ion-button size="medium" (click)="googleLogin()" color="google">
+			  <ion-icon name="logo-google"></ion-icon>
+			  <label class="googleplus-social-label"> Google+ </label>
+			</ion-button>
+		  </ion-col>
+		</ion-row>
+  
+		<ion-row>
+		  <ion-col text-center>
+			<ion-button size="medium" (click)="linkedInLogin()" color="linkedin">
+			  <ion-icon name="logo-linkedin"></ion-icon>
+			  <label class="linkedin-social-label"> LinkedIn </label>
+			</ion-button>
+		  </ion-col>
+  
+		  <ion-col text-center>
+			<ion-button size="medium" (click)="twitterLogin()" color="twitter">
+			  <ion-icon name="logo-twitter"></ion-icon>
+			  <label class="twitter-social-label"> Twitter </label>
+			</ion-button>
+		  </ion-col>
+		</ion-row>
+	  </ion-grid>
+	</div>
+  </ion-content>

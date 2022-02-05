@@ -1,0 +1,39 @@
+ <!-- <ion-menu persistent="true" class="menu" [content]="content"> -->
+   
+   <ion-header >
+     <ion-toolbar color="primary">
+       <ion-title>
+         Restaurnts
+         <ion-button color="primary" *ngIf="login"  (click)="logIN()" class="btn-login">LOGIN</ion-button>
+         <ion-button color="primary" *ngIf="logout" (click)="logOut()" class="btn-login">LOGOUT</ion-button>
+       </ion-title>
+       
+     </ion-toolbar>
+   </ion-header>
+
+   <ion-content>
+    <ion-row class="img-name-row">
+      <ion-col>
+        <img class="user-img" src="assets/icon/admin.jpg">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="user-name">Welcome</p>
+      </ion-col>
+    </ion-row>
+     <div class="main">
+      <ion-button color="primary" expand="block" (click)="homePage()">Home</ion-button>
+      <ion-button color="primary" expand="block" (click)="bookingPage()">Booking</ion-button>
+      <ion-button color="primary" expand="block" (click)="offerPage()">Offer</ion-button>
+      <ion-button color="primary" expand="block" (click)="newsPage()">Order</ion-button>
+      <ion-button color="primary" expand="block" (click)="loginPage()">Login</ion-button>
+      <ion-button color="primary" expand="block" (click)="registerPage()">Register</ion-button>
+      <ion-button color="primary" expand="block" (click)="contactPage()">Contact</ion-button>
+      <!-- <ion-button color="primary" expand="block">Primary</ion-button> -->
+     </div>   
+     <div class="footer">
+       <p>@copyright 2021-22</p>
+     </div>
+  </ion-content>
+

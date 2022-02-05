@@ -1,0 +1,266 @@
+<ion-header>
+    <ion-toolbar color="primary">
+    <ion-buttons slot="start" color="dark">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title style="text-align: center">Order</ion-title>
+  </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div>
+        <ion-list class="orders-list">
+            <ion-card class="orders-item" >
+                <ion-row>
+                    <!-- <ion-row *ngFor="let item of order ; let i =index "> -->
+                        <ion-col col-4>
+                            <img src="../../../assets/img/south.jpeg" alt="">
+                        </ion-col>
+                        <ion-col col-5>
+                            <p class="item-name">
+                                <strong>Order</strong>
+                            </p>
+                            <p class="item-price">Price: <strong>250</strong></p>
+                            <p class="date">Qty: <strong></strong></p>
+                        </ion-col>
+                        <ion-col col-3>
+                            <button class="btn-view" ion-button color="primary" (click)="orderDetails()">
+                                View
+                            </button>
+                            <button class="btn-view" ion-button color="primary" (click)="orderStatus()">
+                              Status
+                            </button>
+                        </ion-col>
+                    <!-- </ion-row> -->
+                </ion-row>
+            </ion-card>
+        </ion-list>
+    </div>
+    <div>
+      <ion-list class="orders-list">
+          <ion-card class="orders-item" >
+              <ion-row>
+                  <!-- <ion-row *ngFor="let item of order ; let i =index "> -->
+                      <ion-col col-4>
+                          <img src="../../../assets/img/b.jpeg" alt="">
+                      </ion-col>
+                      <ion-col col-5>
+                          <p class="item-name">
+                              <strong>Order</strong>
+                          </p>
+                          <p class="item-price">Price: <strong>150</strong></p>
+                          <p class="date">Qty: <strong></strong></p>
+                      </ion-col>
+                      <ion-col col-3>
+                          <button class="btn-view" ion-button color="primary" (click)="orderDetails()">
+                              View
+                          </button>
+                          <button class="btn-view" ion-button color="primary" (click)="orderStatus()">
+                            Status
+                          </button>
+                      </ion-col>
+                  <!-- </ion-row> -->
+              </ion-row>
+          </ion-card>
+      </ion-list>
+  </div>
+  <div>
+    <ion-list class="orders-list">
+        <ion-card class="orders-item" >
+            <ion-row>
+                <!-- <ion-row *ngFor="let item of order ; let i =index "> -->
+                    <ion-col col-4>
+                        <img src="../../../assets/img/c.jpeg" alt="">
+                    </ion-col>
+                    <ion-col col-5>
+                        <p class="item-name">
+                            <strong>Order</strong>
+                        </p>
+                        <p class="item-price">Price: <strong>175</strong></p>
+                        <p class="date">Qty: <strong></strong></p>
+                    </ion-col>
+                    <ion-col col-3>
+                        <button class="btn-view" ion-button color="primary" (click)="orderDetails()">
+                            View
+                        </button>
+                        <button class="btn-view" ion-button color="primary" (click)="orderStatus()">
+                          Status
+                        </button>
+                    </ion-col>
+                <!-- </ion-row> -->
+            </ion-row>
+        </ion-card>
+    </ion-list>
+  </div>
+  <div>
+    <ion-list class="orders-list">
+        <ion-card class="orders-item" >
+            <ion-row>
+                <!-- <ion-row *ngFor="let item of order ; let i =index "> -->
+                    <ion-col col-4>
+                        <img src="../../../assets/img/d.jpeg" alt="">
+                    </ion-col>
+                    <ion-col col-5>
+                        <p class="item-name">
+                            <strong>Order</strong>
+                        </p>
+                        <p class="item-price">Price: <strong>225</strong></p>
+                        <p class="date">Qty: <strong></strong></p>
+                    </ion-col>
+                    <ion-col col-3>
+                        <button class="btn-view" ion-button color="primary" (click)="orderDetails()">
+                            View
+                        </button>
+                        <button class="btn-view" ion-button color="primary" (click)="orderStatus()">
+                          Status
+                        </button>
+                    </ion-col>
+                <!-- </ion-row> -->
+            </ion-row>
+        </ion-card>
+    </ion-list>
+  </div>
+  <div>
+    <ion-list class="orders-list">
+        <ion-card class="orders-item" >
+            <ion-row>
+                <!-- <ion-row *ngFor="let item of order ; let i =index "> -->
+                    <ion-col col-4>
+                        <img src="../../../assets/img/h.jpeg" alt="">
+                    </ion-col>
+                    <ion-col col-5>
+                        <p class="item-name">
+                            <strong>Order</strong>
+                        </p>
+                        <p class="item-price">Price: <strong>130</strong></p>
+                        <p class="date">Qty: <strong></strong></p>
+                    </ion-col>
+                    <ion-col col-3>
+                        <button class="btn-view" ion-button color="primary" (click)="orderDetails()">
+                            View
+                        </button>
+                        <button class="btn-view" ion-button color="primary" (click)="orderStatus()">
+                          Status
+                        </button>
+                    </ion-col>
+                <!-- </ion-row> -->
+            </ion-row>
+        </ion-card>
+    </ion-list>
+  </div>
+  <div>
+    <ion-list class="orders-list">
+        <ion-card class="orders-item" >
+            <ion-row>
+                <!-- <ion-row *ngFor="let item of order ; let i =index "> -->
+                    <ion-col col-4>
+                        <img src="../../../assets/img/nov-veg.jpeg" alt="">
+                    </ion-col>
+                    <ion-col col-5>
+                        <p class="item-name">
+                            <strong>Order</strong>
+                        </p>
+                        <p class="item-price">Price: <strong>300</strong></p>
+                        <p class="date">Qty: <strong></strong></p>
+                    </ion-col>
+                    <ion-col col-3>
+                        <button class="btn-view" ion-button color="primary" (click)="orderDetails()">
+                            View
+                        </button>
+                        <button class="btn-view" ion-button color="primary" (click)="orderStatus()">
+                          Status
+                        </button>
+                    </ion-col>
+                <!-- </ion-row> -->
+            </ion-row>
+        </ion-card>
+    </ion-list>
+  </div>
+  <div>
+    <ion-list class="orders-list">
+        <ion-card class="orders-item" >
+            <ion-row>
+                <!-- <ion-row *ngFor="let item of order ; let i =index "> -->
+                    <ion-col col-4>
+                        <img src="../../../assets/img/e.jpeg" alt="">
+                    </ion-col>
+                    <ion-col col-5>
+                        <p class="item-name">
+                            <strong>Order</strong>
+                        </p>
+                        <p class="item-price">Price: <strong>200</strong></p>
+                        <p class="date">Qty: <strong></strong></p>
+                    </ion-col>
+                    <ion-col col-3>
+                        <button class="btn-view" ion-button color="primary" (click)="orderDetails()">
+                            View
+                        </button>
+                        <button class="btn-view" ion-button color="primary" (click)="orderStatus()">
+                          Status
+                        </button>
+                    </ion-col>
+                <!-- </ion-row> -->
+            </ion-row>
+        </ion-card>
+    </ion-list>
+  </div>
+  <div>
+    <ion-list class="orders-list">
+        <ion-card class="orders-item" >
+            <ion-row>
+                <!-- <ion-row *ngFor="let item of order ; let i =index "> -->
+                    <ion-col col-4>
+                        <img src="../../../assets/img/indin.jpeg" alt="">
+                    </ion-col>
+                    <ion-col col-5>
+                        <p class="item-name">
+                            <strong>Order</strong>
+                        </p>
+                        <p class="item-price">Price: <strong>199</strong></p>
+                        <p class="date">Qty: <strong></strong></p>
+                    </ion-col>
+                    <ion-col col-3>
+                        <button class="btn-view" ion-button color="primary" (click)="orderDetails()">
+                            View
+                        </button>
+                        <button class="btn-view" ion-button color="primary" (click)="orderStatus()">
+                          Status
+                        </button>
+                    </ion-col>
+                <!-- </ion-row> -->
+            </ion-row>
+        </ion-card>
+    </ion-list>
+  </div>
+  <div>
+    <ion-list class="orders-list">
+        <ion-card class="orders-item" >
+            <ion-row>
+                <!-- <ion-row *ngFor="let item of order ; let i =index "> -->
+                    <ion-col col-4>
+                        <img src="../../../assets/img/images.jpeg" alt="">
+                    </ion-col>
+                    <ion-col col-5>
+                        <p class="item-name">
+                            <strong>Order</strong>
+                        </p>
+                        <p class="item-price">Price: <strong>100</strong></p>
+                        <p class="date">Qty: <strong></strong></p>
+                    </ion-col>
+                    <ion-col col-3>
+                        <button class="btn-view" ion-button color="primary" (click)="orderDetails()">
+                            View
+                        </button>
+                        <button class="btn-view" ion-button color="primary" (click)="orderStatus()">
+                          Status
+                        </button>
+                    </ion-col>
+                <!-- </ion-row> -->
+            </ion-row>
+        </ion-card>
+    </ion-list>
+  </div>
+  
+  
+  
+  </ion-content>

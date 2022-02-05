@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-toolbar color="primary">
+    <ion-buttons slot="start" color="dark">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title style="text-align: center">View</ion-title>
+  </ion-toolbar>
+  </ion-header>
+
+
+<ion-content>
+  <div>
+      <div class="empty-list">
+          <ion-icon class="empty-cart" name="timer" item-left></ion-icon>
+          <p>No Orders </p>
+      </div>
+
+  </div>
+  <div >
+      <ion-card class="orders-item" (click)="orders">
+          <h5>Order ID:<strong></strong></h5>
+          <ion-row>
+              <ion-col col-6 no-padding>
+                  <p class="item-name">Total Amount:<strong>
+                       </strong></p>
+              </ion-col>
+              <ion-col col-6 no-padding>
+                  <h6 class="item-name">Ordered Date:<strong>
+                     
+                  </strong></h6>
+              </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col col-6 no-padding>
+                  <p class="status">Status: <strong>Yes</strong></p>
+              </ion-col>
+              <ion-col col-6 no-padding>
+                  <button ion-button color="secondary" small block (click)="orderDet()">Order Details</button>
+              </ion-col>
+          </ion-row>
+      </ion-card>
+  </div>
+
+</ion-content>

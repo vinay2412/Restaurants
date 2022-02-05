@@ -1,0 +1,22 @@
+ion-content {
+  --background-color:black;
+  // --background-image:linear-gradient(rgba(255,255,255,-0.5), rgba(181, 255, 255, 0.5)), url(../../../assets/img/event3.jpg)10% 0/100% 100% no-repeat;
+   }
+  .overlay{
+    img.slider-img {
+      width: 295px;
+      height: 100%;
+      margin: 22px 0;
+      border-radius: 16px;
+  }
+  .card-title{
+    align-items: center;
+    text-align: center;
+    }
+  ion-row.md.hydrated {
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+  }
+ 

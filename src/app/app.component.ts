@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,14 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+
+  constructor(platform: Platform,
+    statusBar: StatusBar,
+    splashScreen: SplashScreen) {
+      
+    platform.ready().then(() => {
+      statusBar.styleDefault();
+      splashScreen.hide();
+    });
+  }
 }

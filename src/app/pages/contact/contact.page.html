@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start" color="dark">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title style="text-align:center;">Contact</ion-title>
+    </ion-toolbar>
+   </ion-header>
+  
+
+<ion-content class="contact">
+  <p class="contact-head">Contact Us</p>
+  <form (ngSubmit)="onSend(f)" #f="ngForm">
+      <!--name-->
+      <ion-row>
+          <ion-col col-12>
+              <ion-item>
+                  <!-- <ion-label>Name</ion-label> -->
+                  <ion-input type="text" name="name" placeholder="Name" id="name" [(ngModel)]="user.name" required></ion-input>
+              </ion-item>
+          </ion-col>
+      </ion-row>
+      <!--email-->
+      <ion-row>
+          <ion-col col-12>
+              <ion-item>
+                  <!-- <ion-label>Email</ion-label> -->
+                  <ion-input type="email" name="email" placeholder="Email" id="email" [(ngModel)]="user.email" required></ion-input>
+              </ion-item>
+          </ion-col>
+      </ion-row>
+      <!--message-->
+      <ion-row>
+          <ion-col col-12>
+              <ion-item>
+                  <!-- <ion-label>Message</ion-label> -->
+                  <ion-textarea rows="6" lineHeight="42" placeholder="Message" name="message" id="message" [(ngModel)]="user.message" required></ion-textarea>
+              </ion-item>
+          </ion-col>
+      </ion-row>
+      <!--button-->
+      <ion-row>
+          <ion-col col-12>
+              <button class="submit-btn" ion-button type='submit' [disabled]="!f.valid"> Send
+              </button>
+          </ion-col>
+      </ion-row>
+  </form>
+</ion-content>

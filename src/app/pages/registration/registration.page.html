@@ -1,0 +1,66 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start" color="dark">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title style="text-align:center;">Registration</ion-title>
+    </ion-toolbar>
+   </ion-header>
+
+<ion-content class="login">
+    <div class=".logo-container ">
+        <img class="logo" src="assets/img/logo-icon.png">
+    </div>
+        <form [formGroup]="registration" (ngSubmit)="onSubmit()">
+        <ion-row>
+            <ion-col col-12>
+                <ion-item>
+                    <!-- <ion-label>Name</ion-label> -->
+                    <ion-input type="text" placeholder="Name"  required=""></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <!--email-->
+        <ion-row>
+            <ion-col col-12>
+                <ion-item>
+                    <!-- <ion-label>Email</ion-label> -->
+                    <ion-input type="email" placeholder="Email"  required=""></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <!--Mobile No-->
+        <ion-row>
+            <ion-col col-12>
+                <ion-item>
+                    <!-- <ion-label>Mobile No.</ion-label> -->
+                    <ion-input type="tel" placeholder="Mobile No"  ></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <!--password-->
+        <ion-row>
+            <ion-col col-12>
+                <ion-item>
+                    <!-- <ion-label>Password</ion-label> -->
+                    <ion-input type="password" placeholder="Password"  ></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <!--button-->
+        <ion-row>
+            <ion-col col-12>
+                <ion-button
+                size="medium"
+                class="login-btn"
+                type="submit"
+                [disabled]="!registration.valid"
+                expand="block">
+                Register
+              </ion-button>
+               
+            </ion-col>
+        </ion-row>
+    </form>
+       
+</ion-content>
